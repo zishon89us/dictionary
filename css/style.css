@@ -1,4 +1,7 @@
 /* Empty. Add your own CSS if you like */
-ion-content{
-
+.dictionary-list{
+    position: relative;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 0;
 }
