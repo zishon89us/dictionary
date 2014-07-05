@@ -30,7 +30,7 @@
     <ion-pane ng-controller="homeController">
 
         <ion-header-bar>
-            <!--Serach Bar-->
+
             <div class="bar bar-header item-input-inset">
                 <label class="item-input-inset">
                     <i class="icon ion-ios7-search placeholder-icon"></i>
@@ -42,14 +42,21 @@
 
         <ion-content>
 
-            <!--List-->
             <ul class="dictionary-list" ng-repeat="data in datas |filter:search">
                 <li class="item">
-                    <h2>{{data}}</h2>
+                    <h2>{{data.word}}</h2>
                 </li>
             </ul>
 
         </ion-content>
+
+        <ion-footer-bar>
+            <div class="bar bar-footer bar-positive">
+                <button class="button button-clear">Add Words</button>
+                <button class="button button-clear pull-right">Delete Words</button>
+            </div>
+        </ion-footer-bar>
     </ion-pane>
+
 </body>
 </html>
